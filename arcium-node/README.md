@@ -1,18 +1,24 @@
-# Arcium Node
+# Arcium-Node
 
-[![Status](https://img.shields.io/badge/status-active-brightgreen)](https://github.com/rudimentall1/arcium-node)
+Demo repository for the **arcium-node**.
 
-## Описание
-Arcium Node — демонстрационный репозиторий ноды (для GitHub-статуса).
+## Status
+![GitHub last commit](https://img.shields.io/github/last-commit/rudimentall1/arcium-node)
+![GitHub issues](https://img.shields.io/github/issues/rudimentall1/arcium-node)
+![GitHub license](https://img.shields.io/github/license/rudimentall1/arcium-node)
 
-## Статус
-✅ Demo / Test / Showcase
+## Description
+This repository contains the setup and demo files for the **arcium-node**.  
 
-## Скриншот
-![Demo](https://via.placeholder.com/600x150.png?text=Arcium+Node+Demo)
+You can find configs, scripts, and logs for blockchain testing, node deployment, and infra experiments.
 
-## Быстрый старт
+## Usage
 ```bash
-docker-compose up -d
-./scripts/deploy.sh
+# Clone repository
+git clone https://github.com/rudimentall1/arcium-node.git
+cd arcium-node
+
+# Example command
+./start-node.sh
 ```
+

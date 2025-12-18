@@ -1,18 +1,24 @@
-# Drosera Node
+# Drosera-Node
 
-[![Status](https://img.shields.io/badge/status-active-brightgreen)](https://github.com/rudimentall1/drosera-node)
+Demo repository for the **drosera-node**.
 
-## Описание
-Drosera Node — демонстрационный репозиторий ноды (для GitHub-статуса).
+## Status
+![GitHub last commit](https://img.shields.io/github/last-commit/rudimentall1/drosera-node)
+![GitHub issues](https://img.shields.io/github/issues/rudimentall1/drosera-node)
+![GitHub license](https://img.shields.io/github/license/rudimentall1/drosera-node)
 
-## Статус
-✅ Demo / Test / Showcase
+## Description
+This repository contains the setup and demo files for the **drosera-node**.  
 
-## Скриншот
-![Demo](https://via.placeholder.com/600x150.png?text=Drosera+Node+Demo)
+You can find configs, scripts, and logs for blockchain testing, node deployment, and infra experiments.
 
-## Быстрый старт
+## Usage
 ```bash
-docker-compose up -d
-./scripts/deploy.sh
+# Clone repository
+git clone https://github.com/rudimentall1/drosera-node.git
+cd drosera-node
+
+# Example command
+./start-node.sh
 ```
+
