@@ -1,0 +1,30 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  schedule:
+    - cron: "0 0 * * *"  # ежедневный запуск
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Run node demo script
+        run: |
+          echo "Running demo for blockcast-node"
+          # если есть скрипт запуска, например start-node.sh
+          if [ -f start-node.sh ]; then
+            chmod +x start-node.sh
+            ./start-node.sh --demo
+          fi
+
